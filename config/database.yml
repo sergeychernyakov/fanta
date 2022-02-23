@@ -13,6 +13,6 @@ test:
 
 production:
   <<: *default
-  database: fanta
+  database: fanta_prod
   username: deploy
   password: Rails.application.credentials.dig(:production, :db_password)
