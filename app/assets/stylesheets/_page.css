@@ -1,0 +1,62 @@
+.slick-slider ul.slick-dots{
+	position: static;
+	line-height: 0;
+	padding: 0 20px!important;
+}
+.slick-slider .slick-dots li{
+	width: auto!important;
+	height: auto!important;
+	position: static;
+	margin: 0 8px;
+	padding: 0!important;
+}
+.slick-slider .slick-dots li.slick-active button,
+.slick-slider .slick-dots li button:hover{
+	background: #A2222F!important;
+}
+.slick-slider .slick-dots li:before,
+.slick-slider .slick-dots li button:before{
+	content: none!important;
+}
+.slick-slider .slick-dots li button{
+	padding: 0;
+	width: 16px;
+	height: 16px;
+	border-radius: 100% 100%!important;
+	background: #E1E1E1!important;
+}
+
+.slick-dots li:only-child{ 
+	display: none; 
+}
+
+
+.sitemap-section{
+	padding: 75px 0;
+}
+.sitemap ol{
+	font-weight: 500;
+}
+.sitemap ol li{
+	padding-left: 5px;
+	padding-bottom: 10px;
+	font-size: 20px;
+}
+.sitemap ol li a {
+	transition: .5s;
+    text-decoration: none;
+}
+.sitemap ol li a:hover{
+    color: #000;
+}
+.sitemap ol li a:focus{
+    text-decoration: underline;
+    color: #000;
+}
+.sec-entry-hdr{
+	padding-bottom: 15px;
+}
+.sec-entry-hdr-title{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+}
