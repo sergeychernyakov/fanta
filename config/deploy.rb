@@ -2,7 +2,7 @@
 lock "~> 3.16.0"
 require 'capistrano-db-tasks'
 set :application, "fanta"
-set :repo_url, "git@example.com:me/my_repo.git"
+set :repo_url, "git@github.com:Azhar2k16/fanta.git"
 set :deploy_to, '/home/deploy/your-app'
 set :branch, ENV['BRANCH'] if ENV['BRANCH']
 
