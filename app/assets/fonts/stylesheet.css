@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'MicroExtendFLF';
+    src: url('MicroExtendFLF-Bold.eot');
+    src: url('MicroExtendFLF-Bold.eot?#iefix') format('embedded-opentype'),
+        url('MicroExtendFLF-Bold.woff2') format('woff2'),
+        url('MicroExtendFLF-Bold.woff') format('woff'),
+        url('MicroExtendFLF-Bold.ttf') format('truetype'),
+        url('MicroExtendFLF-Bold.svg#MicroExtendFLF-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+

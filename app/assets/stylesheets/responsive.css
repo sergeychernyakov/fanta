@@ -11,7 +11,9 @@
 }
 
 @media(max-width: 1299px){
-
+	.logged-page .sec-entry-hdr{
+		padding-bottom: 50px;
+	}
 }
 
 @media(max-width: 1199px){
@@ -40,7 +42,28 @@
 	h6,.fl-h6{
 		font-size: 20px;
 	}
-
+	.logged-page .sec-entry-hdr{
+		padding-bottom: 35px;
+	}
+	.logged-page .fs-trns-btn,
+	.logged-page .fs-btn{
+		font-size: 21px;
+	}
+	.logged-page h1,.logged-page .fl-h1{
+		font-size: 42px;
+	}
+	.logged-page h2,.logged-page .fl-h2{
+		font-size: 35px;
+	}
+	.logged-page h3,.logged-page .fl-h3{
+		font-size: 32px;
+	}
+	.logged-page h4,.logged-page .fl-h4{
+		font-size: 28px;
+	}
+	.logged-page h5,.logged-page .fl-h5{
+		font-size: 22px;
+	}
 }
 
 @media(max-width: 991px){
@@ -72,6 +95,24 @@
 	.fs-trns-btn{
 		padding: 18px 13px 18px;
 		font-size: 18px;
+	}
+	.logged-page .sec-entry-hdr {
+	    padding-bottom: 30px;
+	}
+	.logged-page h1,.logged-page .fl-h1{
+		font-size: 38px;
+	}
+	.logged-page h2,.logged-page .fl-h2{
+		font-size: 32px;
+	}
+	.logged-page h3,.logged-page .fl-h3{
+		font-size: 30px;
+	}
+	.logged-page h4,.logged-page .fl-h4{
+		font-size: 26px;
+	}
+	.logged-page h5,.logged-page .fl-h5{
+		font-size: 21px;
 	}
 }
 
@@ -121,6 +162,28 @@
 	    padding: 15px 13px 15px;
 	    font-size: 17px;
 	}
+	.logged-page .fs-trns-btn,
+	.logged-page .fs-btn{
+		font-size: 20px;
+	}
+	.logged-page .sec-entry-hdr {
+	    padding-bottom: 20px;
+	}
+	.logged-page h1,.logged-page .fl-h1{
+		font-size: 33px;
+	}
+	.logged-page h2,.logged-page .fl-h2{
+		font-size: 28px;
+	}
+	.logged-page h3,.logged-page .fl-h3{
+		font-size: 25px;
+	}
+	.logged-page h4,.logged-page .fl-h4{
+		font-size: 23px;
+	}
+	.logged-page h5,.logged-page .fl-h5{
+		font-size: 20px;
+	}
 }
 
 @media(max-width: 575px){
@@ -134,7 +197,10 @@
 }
 
 @media(max-width: 479px){
-
+	.logged-page .fs-btn,
+	.logged-page .fs-trns-btn{
+		flex-basis: 100%;
+	}
 
 }
 
