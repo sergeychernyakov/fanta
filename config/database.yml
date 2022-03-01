@@ -1,18 +1,19 @@
 default: &default
   adapter: postgresql
   encoding: <%= ENV.fetch('DB_ENCODING', 'unicode') %>
-  # port: <%= ENV.fetch('DB_PORT', '5432') %>
   pool: <%= ENV.fetch('RAILS_MAX_POOLS', 5) %>
   host: <%= ENV.fetch('DB_HOST', 'localhost') %>
-  database: 'fantasea_development'
-
-test:
-  <<: *default
-  database: 'fantasea_test'
+  database: fantasea_development
 
 development:
   <<: *default
 
+test:
+  <<: *default
+  database: fantasea_test
+
 production:
   <<: *default
-  database: <%= ENV.fetch('DB_NAME') %>_production
+  database: fantaprod
+  username: deploy
+  password: Rails.application.credentials.dig(:production, :db_password)
