@@ -32,14 +32,11 @@ gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 gem "bootsnap", require: false
 
 # Use Sass to process CSS
-<<<<<<< HEAD
   gem "sassc-rails"
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
  gem "image_processing", "~> 1.2"
-=======
 gem "sassc-rails"
->>>>>>> d5b3e66ebd3f62e2c2add99c6d9e08d3b954f715
 
 group :development, :test do
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
