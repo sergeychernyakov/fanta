@@ -1,0 +1,29 @@
+<div class="container">
+<h1>To-Do Collection</h1>
+
+<table class="table table-hover">
+
+  <thead class="thead-dark">
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Price</th>
+      <th>User Name</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @collections.each do |collection| %>
+    <tr>
+      <td><%=collection.name%></td>
+      <td><%=collection.description%></td>
+      <td><%=collection.price%></td>
+      <td><%=collection.user.fullname%></td>
+
+
+    </tr>
+    <% end %>
+  </tbody>
+
+</table>
+</div>

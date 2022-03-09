@@ -1,0 +1,407 @@
+
+<div class="page-body-cntlr logged-page">
+  <div class="bdoverlay"></div>
+
+  <div class="xs-mobile-menu logged-xs-mobile-menu">
+    <div class="xs-pop-up-menu-inr">
+      <div class="xs-pop-up-menu-top">
+        <div class="logo">
+          <a href="#"><img src="/assets/logged-logo.svg"></a>
+        </div>
+        <div class="hamburger-cntlr">
+          <div class="hamburger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+      <div class="xs-pop-menu-con">
+        <div class="xs-menu">
+          <nav class="main-nav">
+            <ul class="clearfix reset-list">
+              <li class="current-menu-item"><a href="#">Exlplore</a></li>
+              <li class="menu-item-has-children">
+                <a href="#">More</a>
+                <ul class="sub-menu">
+                  <li><a href="#">FAQ</a></li>
+                  <li><a href="#">Contact</a></li>
+                  <li><a href="#">Privacy & TOS</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Create</a></li>
+               
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="Item-details-page-con-cntlr">
+    <section class="innerpage-con-wrap">
+      <article class="default-page-con">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="innerpage-con-inner">
+                <div class="innerpage-con-lft">
+                  <div class="innerpage-feature-img">                
+                  <%= image_tag(@item.attachment) %>
+                  </div>
+                  <div class="innerpage-lft-des-cntlr">
+                    <div class="fs-accordion-wrap">
+                      <ul class="reset-list">
+                        <li>
+                          <div class="fs-accordion">
+                            <div class="fs-accordion-hdr">
+                              <h3 class="fs-accordion-title">Description
+                                <i>
+                                  <svg class="description-icon" width="20" height="14" viewBox="0 0 20 14" fill="black">
+                                    <use xlink:href="#description-icon"></use> 
+                                  </svg>
+                                </i>
+                              </h3>
+                            </div>
+                            <div class="fs-accordion-des">
+                              <div class="fs-accordion-about-collection">
+                                <div class="fs-accordion-ac-inner">
+                                  <div class="fs-accordion-ac">
+                                    <h3 class="fs-accordion-ac-title">About Collection
+                                      <i>
+                                        <svg class="ac-toop-tip-icon" width="21" height="21" viewBox="0 0 21 21" fill="black">
+                                          <use xlink:href="#ac-toop-tip-icon"></use> 
+                                        </svg>
+                                      </i>
+                                    </h3>
+                                    <div class="fs-accordion-ac-des">
+                                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique blandit
+                                        consectetur arcu, bibendum sit donec. Sollicitudin morbi neque,
+                                        fringilla cras fringilla odio. Lobortis dictumst mauris sed tempus posuere
+                                        vulputate nulla vitae tincidunt. Vitae quam orci, ac eros, amet.
+                                      </p>
+                                    </div>                                  
+                                  </div>
+                                  <div class="fs-accordion-ac-details">
+                                    <h3 class="fs-accordion-ac-dtls-title">Details
+                                      <i>
+                                        <svg class="ac-detail-icon" width="22" height="22" viewBox="0 0 22 22" fill="black">
+                                          <use xlink:href="#ac-detail-icon"></use> 
+                                        </svg>
+                                      </i>
+                                    </h3>
+                                    <ul class="reset-list">
+                                      <li>
+                                        <strong>Contract Address</strong>
+                                        <span>0x3e69...df11</span>
+                                      </li>
+                                      <li>
+                                        <strong>Token ID</strong>
+                                        <span>3146</span>
+                                      </li>
+                                      <li>
+                                        <strong>Token Standard</strong>
+                                        <span>ERC-721</span>
+                                      </li>
+                                      <li>
+                                        <strong>Blockchain</strong>
+                                        <span>Ethereum</span>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>                          
+                            </div>
+                          </div>
+                        </li>
+                      </ul>                        
+                    </div>
+                  </div>
+                </div>
+                <div class="innerpage-con-rgt">
+                  <div class="innerpage-summary-cntlr">
+                    <div class="innerpage-summary">
+                      <div class="innerpage-summary-con">
+                        <h3 class="fs-is-sub-title fl-h3">Collection Name</h3>
+                        <h5><%= @item.collection.name %></h5>
+                        <h2 class="fs-is-title fl-h1">Item Name</h2>
+                         <h5><%= @item.name%></h5>
+                        <div class="innerpage-summary-own">
+                          <strong>Owned by</strong><br>
+                          <span><%= current_user.first_name %></span>
+                          <span class="itm-dtls-own-fav">
+                            <a href="#">
+                              345 Favorites
+                              <i>
+                                <svg class="fs-love-icon" width="23" height="21" viewBox="0 0 23 21" fill="#737373">
+                                  <use xlink:href="#fs-love-icon"></use> 
+                                </svg>
+                              </i>
+                            </a>                          
+                          </span>
+                        </div>
+                      </div>                      
+                      <div class="innerpage-summary-rgt">
+                        <div class="fs-clickable-btns">
+                          <div class="fs-clickable-btns-inr">
+                            <div class="clickable-btn">
+                              <div class="share-btn btn-click">
+                                <a href="#">
+                                  <i>
+                                    <svg class="share-icon" width="24" height="25" viewBox="0 0 24 25" fill="#A8A8A8">
+                                      <use xlink:href="#share-icon"></use> 
+                                    </svg>
+                                  </i>                              
+                                </a>
+                                <div class="share-socials btn-click-des">
+                                  <ul class="reset-list">
+                                    <li>
+                                      <a target="_blank" href="#">
+                                        <i class="fab fa-facebook-f"></i>
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a target="_blank" href="#">
+                                        <i class="fab fa-linkedin-in"></i>
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a target="_blank" href="#">
+                                        <i class="fab fa-instagram"></i>
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a target="_blank" href="#">
+                                        <i class="fab fa-flickr"></i>
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="clickable-btn">
+                              <div class="setting-btn btn-click">
+                                <a href="#">
+                                  <i>
+                                    <svg class="setting-icon" width="7" height="27" viewBox="0 0 7 27" fill="#A8A8A8">
+                                      <use xlink:href="#setting-icon"></use> 
+                                    </svg>   
+                                  </i>
+                                </a>
+                                <div class="setting-option btn-click-des">
+                                  <ul class="reset-list">
+                                    <li>
+                                      <a href="#">option 1</a>
+                                    </li>
+                                    <li>
+                                      <a href="#">option 2</a>
+                                    </li>
+                                    <li>
+                                      <a href="#">option 3</a>
+                                    </li>
+                                    <li>
+                                      <a href="#">option 4</a>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="innerpage-summary-offer-cntlr">
+                      <div class="innerpage-summary-offer-inner">
+                        <h3 class="innerpage-summary-offer-title fl-h6">Highest Offer</h3>
+                        <div class="innerpage-summary-offer-price">
+                          <i>
+                            <img src="/assets/price-icon-2.svg" alt="">
+                          </i>
+                          <strong>0.5</strong><span> ($1,550.10)</span>
+                        </div>
+                        <div class="innerpage-summary-offer-btn">
+                          <div class="fs-btn-cntlr">
+                            <a href="#" class="fs-trns-btn">Make Offer</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="fs-accordion-wrap">
+                    <ul class="reset-list">
+                      <li class="has-chart">
+                        <div class="fs-accordion">
+                          <div class="fs-accordion-hdr">
+                            <h3 class="fs-accordion-title">Price History
+                              <i>
+                                <svg class="price-history-icon" width="29" height="16" viewBox="0 0 29 16" fill="black">
+                                  <use xlink:href="#price-history-icon"></use> 
+                                </svg>
+                              </i>
+                            </h3>
+                          </div>
+                          <div class="fs-accordion-des">
+                            <div class="fs-accordion-des-inr">
+                              <div class="fs-accordion-select-cntlr">
+                                <select class="custom-select select-2-cntlr">
+                                  <option selected>All time</option>
+                                  <option value="1">10 jan - 20 jan</option>
+                                  <option value="1">20 jan - 30 jan</option>
+                                  <option value="2">01 feb - 10 feb</option>
+                                  <option value="3">10 feb - 20 feb</option>
+                                  <option value="4">20 feb - 29 feb</option>
+                                </select>
+                              </div>
+                              <div class="fs-accordion-graps">
+                                <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+                              </div>
+                            </div>                         
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="fs-accordion">
+                          <div class="fs-accordion-hdr">
+                            <h3 class="fs-accordion-title">Offers
+                              <i>
+                                <svg class="offer-icon" width="20" height="20" viewBox="0 0 20 20" fill="black">
+                                  <use xlink:href="#offer-icon"></use> 
+                                </svg>
+                              </i>
+                            </h3>
+                          </div>
+                          <div class="fs-accordion-des">
+                            <div class="table-dsc">
+                              <table class="table">
+                                <thead class="dfp-thead">
+                                  <tr>
+                                    <th><span class="mHc">Price</span></th>
+                                    <th><span class="mHc">USD Price</span></th>
+                                    <th><span class="mHc">Floor Difference</span></th>
+                                    <th><span class="mHc">Expiration</span></th>
+                                    <th><span class="mHc">From</span></th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td><span class="mHc">0.5 WETH</span></td>
+                                    <td><span class="mHc">$2,139.14</span></td>
+                                    <td><span class="mHc">66% below</span></td>
+                                    <td><span class="mHc">in a month</span></td>
+                                    <td><span class="mHc">Username</span></td>
+                                  </tr>
+                                  <tr>
+                                    <td><span class="mHc">0.5 WETH</span></td>
+                                    <td><span class="mHc">$2,139.14</span></td>
+                                    <td><span class="mHc">66% below</span></td>
+                                    <td><span class="mHc">in a month</span></td>
+                                    <td><span class="mHc">Username</span></td>
+                                  </tr>
+                                  <tr>
+                                    <td><span class="mHc">0.5 WETH</span></td>
+                                    <td><span class="mHc">$2,139.14</span></td>
+                                    <td><span class="mHc">66% below</span></td>
+                                    <td><span class="mHc">in a month</span></td>
+                                    <td><span class="mHc">Username</span></td>
+                                  </tr>
+                                  <tr>
+                                    <td><span class="mHc">0.5 WETH</span></td>
+                                    <td><span class="mHc">$2,139.14</span></td>
+                                    <td><span class="mHc">66% below</span></td>
+                                    <td><span class="mHc">in a month</span></td>
+                                    <td><span class="mHc">Username</span></td>
+                                  </tr>
+                                  <tr>
+                                    <td><span class="mHc">0.5 WETH</span></td>
+                                    <td><span class="mHc">$2,139.14</span></td>
+                                    <td><span class="mHc">66% below</span></td>
+                                    <td><span class="mHc">in a month</span></td>
+                                    <td><span class="mHc">Username</span></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>                          
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="fs-accordion">
+                          <div class="fs-accordion-hdr">
+                            <h3 class="fs-accordion-title">Listings
+                              <i>
+                                <svg class="listing-icon" width="23" height="23" viewBox="0 0 23 23" fill="black">
+                                  <use xlink:href="#listing-icon"></use> 
+                                </svg>
+                              </i>
+                            </h3>
+                          </div>
+                          <div class="fs-accordion-des">
+                            <div class="table-dsc">
+                              <table class="table">
+                                <thead class="dfp-thead">
+                                  <tr>
+                                    <th><span class="mHc">Price</span></th>
+                                    <th><span class="mHc">USD Price</span></th>
+                                    <th><span class="mHc">Floor Difference</span></th>
+                                    <th><span class="mHc">Expiration</span></th>
+                                    <th><span class="mHc">From</span></th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td><span class="mHc">0.5 WETH</span></td>
+                                    <td><span class="mHc">$2,139.14</span></td>
+                                    <td><span class="mHc">66% below</span></td>
+                                    <td><span class="mHc">in a month</span></td>
+                                    <td><span class="mHc">Username</span></td>
+                                  </tr>
+                                  <tr>
+                                    <td><span class="mHc">0.5 WETH</span></td>
+                                    <td><span class="mHc">$2,139.14</span></td>
+                                    <td><span class="mHc">66% below</span></td>
+                                    <td><span class="mHc">in a month</span></td>
+                                    <td><span class="mHc">Username</span></td>
+                                  </tr>
+                                  <tr>
+                                    <td><span class="mHc">0.5 WETH</span></td>
+                                    <td><span class="mHc">$2,139.14</span></td>
+                                    <td><span class="mHc">66% below</span></td>
+                                    <td><span class="mHc">in a month</span></td>
+                                    <td><span class="mHc">Username</span></td>
+                                  </tr>
+                                  <tr>
+                                    <td><span class="mHc">0.5 WETH</span></td>
+                                    <td><span class="mHc">$2,139.14</span></td>
+                                    <td><span class="mHc">66% below</span></td>
+                                    <td><span class="mHc">in a month</span></td>
+                                    <td><span class="mHc">Username</span></td>
+                                  </tr>
+                                  <tr>
+                                    <td><span class="mHc">0.5 WETH</span></td>
+                                    <td><span class="mHc">$2,139.14</span></td>
+                                    <td><span class="mHc">66% below</span></td>
+                                    <td><span class="mHc">in a month</span></td>
+                                    <td><span class="mHc">Username</span></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>                          
+                          </div>
+                        </div>
+                      </li>
+                    </ul>                        
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+  </div>
+</div>
+
+</body>
+</html>
+

@@ -1,12 +1,12 @@
 
 @font-face {
     font-family: 'MicroExtendFLF-Bold';
-    src: url('MicroExtendFLF-Bold/MicroExtendFLF-Bold.eot');
-    src: url('MicroExtendFLF-Bold/MicroExtendFLF-Bold.eot?#iefix') format('embedded-opentype'),
-         url('MicroExtendFLF-Bold/MicroExtendFLF-Bold.woff2') format('woff2'),
-         url('MicroExtendFLF-Bold/MicroExtendFLF-Bold.woff') format('woff'),
-         url('MicroExtendFLF-Bold/MicroExtendFLF-Bold.ttf') format('truetype'),
-         url('MicroExtendFLF-Bold/MicroExtendFLF-Bold.svg#MicroExtendFLF-Bold') format('svg');
+    src: url('assets/MicroExtendFLF-Bold.eot');
+    src: url('assets/MicroExtendFLF-Bold.eot?#iefix') format('embedded-opentype'),
+         url('assets/MicroExtendFLF-Bold.woff2') format('woff2'),
+         url('assets/MicroExtendFLF-Bold.woff') format('woff'),
+         url('assets/MicroExtendFLF-Bold.ttf') format('truetype'),
+         url('assets/MicroExtendFLF-Bold.svg#MicroExtendFLF-Bold') format('svg');
     font-weight: 700;
     font-style: normal;
     font-display: swap;

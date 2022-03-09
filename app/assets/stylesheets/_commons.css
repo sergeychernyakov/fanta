@@ -297,7 +297,7 @@ body .select2-container.select2-container--default.select2-container--open .sele
 }
 .select2-selection__arrow:after {
     content: "";
-    background: url(../images/select-arrow.svg);
+    background: url(/assets/select-arrow.svg);
     background-repeat: no-repeat!important;
     background-size: 100% auto;
     width: 10px;

@@ -1,0 +1,174 @@
+ <div class="create-new-item-cont-cntlr">
+    <div class="custom-nft-qoute-form-sec">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="form-cntnt-cntlr-module">
+              <div class="form-entry-hdr">
+                 <%= form_for @item do |f| %>
+                 <h1 class="fl-h1 form-entry-hdr-title">Create New Item</h1>
+              </div>
+
+              <div class="form-wrp-module clearfix">
+                <form class="needs-validation" novalidate>
+
+                  <div class="input-fields-row img-adding-row">
+                    <div class="input-field">
+                      
+                      <label for=""><span class="input-required-label">*</span>Required Fields</label>
+                      <!-- <label for="">Image, Video, Audio, or 3D Model</label> -->
+                      <strong class="fl-h5 file-type-title">Image, Video, Audio, or 3D Model</strong>
+                      <span class="file-formate-type" for="">File types supported JPG, PNG, GIF, MP4 etc.</span>
+                      <%= f.file_field :attachment, class:"file-formate-type", type:"file", id:"file2", accept: "mp4/*,gif/*,image/*", placeholder: "Item name", required: true %>
+                      
+                      <label class="input-file-label" for="file2">
+
+                        <span class="in-icon in-icon-file plasholder">
+                          <i><svg class="imgfile-add-icon" width="62" height="62" viewBox="0 0 62 62" fill="#202D42">
+                            <use xlink:href="#imgfile-add-icon"></use> </svg>
+                          </i>
+                          
+                        </span>
+                        <div class="file-upload-here file2" id="file-upload-here">
+                          <img id="upload-image" src="" alt="">
+                        </div>
+                      </label>
+
+
+                      <!-- <label class="input-file-label" for="file2"><span class="plasholder"></span></label> -->
+                      <!-- <div class="file-upload-here file2"></div> -->
+                    </div>
+                  </div>
+
+                  <div class="input-fields-row input-field-name-row">
+                    <div class="input-field">
+                      <label for="">Name<span class="input-required-label">*</span></label>
+                      <%= f.text_field :name, placeholder: "Item name", required: true %>
+                    </div>
+                  </div> 
+
+
+                  <div class="input-fields-row">
+                    <div class="input-field">
+                      <label for="">External Link<!-- <span class="input-required-label">*</span> --></label>
+                      <%= f.text_field :external_link, placeholder: "https://yoursite.io/item" %>
+                      <label id="required_1-error" class="required-error" for="required_1">This field is  required.</label>
+                    </div>
+                  </div> 
+
+                  <div class="input-fields-row">
+                    <div class="input-field input-field-textarea">
+                      <label for="">Description<!-- <span class="input-required-label">*</span> --></label>
+                      <%= f.text_field :description, placeholder: "Enter detailed description of your item"%>
+                      <label id="required_1-error" class="required-error" for="required_1">This field is required.</label>
+                    </div>
+                  </div>
+
+
+                  <div class="input-fields-row select-collection-row">
+                    <div class="input-field">
+                      <label for="">Select Collecction</label>
+                      <div class="contact-select contact-select-down-icon">
+                        <%= f.select :collection_id, Collection.all.collect { |c| [ c.name, c.id ] }, {include_blank: true}, { class: "xontact-custom-select select-2-cntlr" } %>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-rows">
+                    <div class="contct-form-acordion-grd-wrap">
+                      <div class="faq-accordion-grd">
+                        <div class="contct-form-acordion-grd-item-col">
+                          <div class="contct-form-acordion-grd-item">
+                            <div class="contct-form-acordion-contnt">
+                              <div class="contct-form-acordion-hdr">
+                                <h5 class="contct-form-acordion-title">Properties</h5>
+                                <span>Traits that differentiate items</span>
+                              </div>
+                              <div class="contct-form-accordion-desc">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh at molestie lectus sit sit posuere in.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh at molestie lectus sit sit posuere in.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        
+                        <div class="contct-form-acordion-grd-item-col">
+                          <div class="contct-form-acordion-grd-item">
+                            <div class="contct-form-acordion-contnt">
+                              <div class="contct-form-acordion-hdr">
+                                <h5 class="contct-form-acordion-title">Levels</h5>
+                                <span>Traits that differentiate items</span>
+                              </div>
+                              <div class="contct-form-accordion-desc">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh at molestie lectus sit sit posuere in.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh at molestie lectus sit sit posuere in.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="contct-form-acordion-grd-item-col">
+                          <div class="contct-form-acordion-grd-item">
+                            <div class="contct-form-acordion-contnt">
+                              <div class="contct-form-acordion-hdr">
+                                <h5 class="contct-form-acordion-title">Stats</h5>
+                                <span>Traits that differentiate items</span>
+                              </div>
+                              <div class="contct-form-accordion-desc">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh at molestie lectus sit sit posuere in.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh at molestie lectus sit sit posuere in.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="input-fields-row unlockable-cont-row">
+                    <div class="input-field">
+                      <label for="">Unlockable Content</label>
+                      <span>Include unlockable content that can only be revealed by the owner of the item.</span>
+
+                      <div class="wpform-checkbox-cntlr">
+                        <input type="checkbox" id="des">
+                        <span class="checkmark"></span>
+                        <!-- <label for="des">I accept the terms and conditions</a></label> -->
+                    </div>
+                    </div>
+                  </div>
+
+                  <div class="input-fields-row input-field-number">
+                    <div class="input-field">
+                      <label for="">Editions</label>
+                      <span>No of items that can be minted</span>
+                      <%= f.text_field :edition %>
+                    </div>
+                  </div>
+
+                  <div class="input-fields-row blockchain-fields-row">
+                    <div class="input-field">
+                      <label for="">Blockchain</label>
+                      <div class="contact-select contact-select-down-icon">
+                        <%= f.select :collection_id, Collection.all.collect { |c| [ c.name, c.id ] }, {include_blank: true}, { class: "xontact-custom-select select-2-cntlr" } %>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="input-fields-row freeze-metadata-row">
+                    <div class="input-field">
+                      <label for="">Freeze Metadata</label>    
+                      <span>Freezing your metadata will allow you to permanently lock and store all of this item's content in decentralized file storage.</span>
+                      <%= f.text_field :metadata, placeholder: "To freeze your metadata, you must create your item first"%>
+                      <label id="required_1-error" class="required-error" for="required_1">This field is required.</label>
+                    </div>
+                  </div>               
+
+                  <div class="input-field-btn">
+                    <%= f.submit%>
+                  </div>
+                </form> 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+<% end %>
