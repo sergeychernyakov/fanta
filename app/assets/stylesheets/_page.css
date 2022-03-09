@@ -1,9 +1,52 @@
+.slick-prev,.slick-next{
+    width: 40px;
+    height: 40px;
+    border-radius: 50% 50%;
+    background: #292D32!important;
+    display: flex!important;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    -ms-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    -moz-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.slick-prev{
+    left: -20px;
+}
+.slick-next{
+    right: -20px;
+}
+.slick-prev:hover,
+.slick-next:hover{
+    background: #A2222F!important;
+}
+.slick-prev:before, .slick-next:before{
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    opacity: 1!important;
+    transition: .5s;
+    -ms-transition: .5s;
+    -webkit-transition: .5s;
+}
+.slick-prev:before{
+    background-image: url('../images/prev-arrow.png');
+}
+.slick-next:before{
+   background-image: url('../images/next-arrow.png');
+}
 .slick-slider ul.slick-dots{
 	position: static;
 	line-height: 0;
 	padding: 0 20px!important;
 }
-.slick-slider .slick-dots li{
+.slick-slider ul.slick-dots li{
 	width: auto!important;
 	height: auto!important;
 	position: static;
@@ -24,10 +67,6 @@
 	height: 16px;
 	border-radius: 100% 100%!important;
 	background: #E1E1E1!important;
-}
-
-.slick-dots li:only-child{ 
-	display: none; 
 }
 
 
@@ -59,4 +98,14 @@
 .sec-entry-hdr-title{
 	font-family: 'Poppins', sans-serif;
 	font-weight: 600;
+}
+.logged-page .sec-entry-hdr{
+	padding-bottom: 60px;
+	text-align: center;
+}
+
+.logged-page .page-entry-hdr{
+	padding-bottom: 40px;
+	text-align: center;
+	text-align: center;
 }

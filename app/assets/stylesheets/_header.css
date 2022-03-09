@@ -115,7 +115,6 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu {
     box-shadow: 0 2px 12px 0 rgb(0 0 0 / 15%);
     -ms-box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.15%);
     -webkit-box-shadow: 0 2px 12px 0 rgb(0 0 0 / 15%);
-    margin-top: 2px;
 }
 
 nav.main-nav > ul > li.menu-item-has-children:hover ul.sub-menu {
@@ -224,7 +223,7 @@ nav.main-nav > ul > li.menu-item-has-children:hover > a:before{
     background: transparent;
     height: 35px;
     color: #7D828D;
-    font-size: 20px;
+    font-size: 17px;
     padding-right: 30px;
 }
 .src-bx-frm input[type="text"]:focus{
@@ -370,6 +369,7 @@ nav.main-nav > ul > li.menu-item-has-children:hover > a:before{
     width: 100%;
     padding: 0 20px;
     z-index: 10;
+    padding-bottom: 40px;
 }
 
 /*.xs-pop-menu-btm {
@@ -440,7 +440,82 @@ body.allWork .hamburger-icon span:nth-child(3) {
     
 }
 
+/*modals*/
+.modal .modal-dialog{
+    margin-left: auto!important;
+    margin-right: auto!important;
+    max-width: 835px!important;
+    width: 100%!important;
+    background: transparent!important;
+}
+.modal .modal-dialog .modal-content{
+    background: #EEEEEE!important;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25)!important;
+    border-radius: 20px!important;
+}
+.modal .modal-dialog .modal-body{
 
+}
+.fs-modal-content button.close{
+    position: absolute;
+    z-index: 10;
+    top: 20px;
+    right: 20px;
+    background: transparent;
+    padding: 0;
+}
+.fs-modal-content button.close i{
+    font-size: 24px;
+}
+.fs-modal-content button.close:hover i{
+    color: #F02020;
+}
+.fs-modal-content-ctlr{
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 70px;
+}
+.fs-modal-title{
+    margin-bottom: 25px!important;
+}
+.fs-modal-title span{
+    color: #F02020;
+}
+.fs-modal-des{
+    max-width: 575px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+}
+.fs-modal-des p{
+    font-size: 23px;
+}
+.fs-modal-des p:last-of-type{
+    margin-bottom: 0;
+}
+.fs-modal-btns{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.fs-modal-btn{
+    margin-right: 20px;
+    margin-left: 20px;
+    flex-grow: 1;
+}
+.fs-modal-btn-01 .fs-btn-cntlr{
+    justify-content: flex-end;
+}
+.fs-modal-btn-01{
+    margin-left: 0;
+}
+.fs-modal-btn-02{
+    margin-right: 0;
+}
+.fs-modal-btn-02 .fs-trns-btn{
+    border-radius: 10px;
+}
 /*responsive*/
 @media(max-width: 1399px){
 
@@ -456,6 +531,24 @@ body.allWork .hamburger-icon span:nth-child(3) {
         padding-bottom: 70px;
         padding-top: 70px;
     }
+
+    .modal .modal-dialog{
+        max-width: 650px!important;
+    }
+    .fs-modal-des p{
+        font-size: 21px;
+    }
+    .fs-modal-des{
+        max-width: 540px;
+        margin-bottom: 50px;
+    }
+    .fs-modal-title{
+        margin-bottom: 20px!important;
+    }
+    .fs-modal-btn{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
 }
 @media(max-width: 991px){
     .hdr-rgt-col{
@@ -467,6 +560,28 @@ body.allWork .hamburger-icon span:nth-child(3) {
     .hdr-user-icon a i img{
         max-width: 30px;
         height: auto;
+    }
+
+    .modal .modal-dialog{
+        max-width: 550px!important;
+    }
+    .fs-modal-des p{
+        font-size: 19px;
+    }
+    .fs-modal-des{
+        max-width: 480px;
+        margin-bottom: 45px;
+    }
+    .fs-modal-title{
+        margin-bottom: 20px!important;
+    }
+    .fs-modal-btn{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .fs-modal-content-ctlr {
+        padding-top: 50px;
+        padding-bottom: 48px;
     }
 }
 @media(max-width: 767px){
@@ -557,6 +672,16 @@ body.allWork .hamburger-icon span:nth-child(3) {
         right: 20px;
         top: 20px;
     }
+    .modal .modal-dialog {
+        max-width: 450px!important;
+    }
+    .fs-modal-des p {
+        font-size: 18px;
+    }
+    .fs-modal-btn {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 }
 @media(max-width: 575px){
     .hdr-search-icon i img, .hdr-wallet-icon a i img, .hdr-user-icon a i img {
@@ -567,9 +692,29 @@ body.allWork .hamburger-icon span:nth-child(3) {
         padding-left: 7px;
         padding-right: 7px;
     }
+    .modal .modal-dialog {
+        max-width: 400px!important;
+    }
+    .fs-modal-des-cntlr h2.fs-modal-title{
+        line-height: 1!important;
+    }
 }
 @media(max-width: 479px){
     .xs-mobile-menu{
         max-width: 100%;
     }
+    .modal .modal-dialog {
+        max-width: initial!important;
+        width: initial!important;
+        margin-left: 20px!important;
+        margin-right: 20px!important;
+    }
+    .fs-modal-btn{
+        margin: 0;
+        width: 100%;
+    }
+    .fs-modal-btn-01{
+        margin-bottom: 15px;
+    }
+    
 }

@@ -1,0 +1,15 @@
+
+@font-face {
+    font-family: 'MicroExtendFLF-Bold';
+    src: url('assets/MicroExtendFLF-Bold.eot');
+    src: url('assets/MicroExtendFLF-Bold.eot?#iefix') format('embedded-opentype'),
+         url('assets/MicroExtendFLF-Bold.woff2') format('woff2'),
+         url('assets/MicroExtendFLF-Bold.woff') format('woff'),
+         url('assets/MicroExtendFLF-Bold.ttf') format('truetype'),
+         url('assets/MicroExtendFLF-Bold.svg#MicroExtendFLF-Bold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+

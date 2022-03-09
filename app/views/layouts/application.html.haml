@@ -1,0 +1,30 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title Fanta
+    %meta{:content => "width=device-width,initial-scale=1", :name => "viewport"}/
+    = csrf_meta_tags
+    = csp_meta_tag
+    = stylesheet_link_tag "application", "data-turbo-track": "reload"
+    = javascript_importmap_tags
+  %body
+    = render 'layouts/userlogin'
+    = render 'layouts/icons_svgs'
+    = render 'layouts/header'
+    - if notice
+      %p.alert.alert-success= notice
+    - if alert
+      %p.alert.alert-danger= alert
+    = yield
+    = render 'layouts/footer'
+    %script{:src => "https://code.jquery.com/jquery-3.0.0.js"}
+    %script{:src => "https://code.jquery.com/jquery-migrate-3.0.0.js"}
+    %script{:src => "/assets/js/popper.min.js"}
+    %script{:src => "/assets/js/bootstrap.min.js"}
+    %script{:src => "/assets/fancybox3/dist/jquery.fancybox.min.js"}
+    %script{:src => "/assets/js/jquery.matchHeight-min.js"}
+    %script{:src => "/assets/js/app.js"}
+    %script{:src => "/assets/js/wow.min.js"}
+    %script{:src => "/assets/select2/select2.min.js"}
+    %script{:src => "/assets/js/main.js"}

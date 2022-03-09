@@ -136,6 +136,7 @@
 	-webkit-transition: all 0.5s;
 	-ms-transition: all 0.5s;
 	transition: all 0.5s;
+	margin-top: 3px;
 }
 .fs-accordion-title.active:after{
 	-webkit-transform: rotate(-180deg);
@@ -248,7 +249,7 @@
 .innerpage-summary-con{
 	padding-right: 20px;
 }
-.fs-clickable-btns{
+.innerpage-summary-rgt{
 	margin-left: auto;
 }
 .fs-clickable-btns-inr {
@@ -294,9 +295,9 @@
 	padding-left: 22px;
 	padding-right: 22px;
 }
-.innerpage-summary-cntlr{
+/*.innerpage-summary-cntlr{
 	overflow: hidden;
-}
+}*/
 .innerpage-summary-offer-sub-title{
 	font-size: 20px;
 	font-weight: 500;
@@ -339,10 +340,14 @@
     padding-top: 20px;
     position: absolute;
     top: 100%;
-    display: none;
     left: -230%;
     border-radius: 6px;
-    margin-top: 14px;
+    margin-top: 40px;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	transition: all 0.5s;
 }
 .setting-btn:after,
 .share-btn:after{
@@ -361,12 +366,19 @@
     -ms-transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
     opacity: 0;
+    margin-top: 40px;
 }
 .setting-btn.active:after,
 .share-btn.active:after{
 	opacity: 1;
+	margin-top: 0;
 }
-
+.active .share-socials,
+.active .setting-option{
+	margin-top: 14px;
+	opacity: 1;
+	visibility: visible;
+}
 .share-socials ul{
 	display: flex;
 	align-items: center;
@@ -403,10 +415,15 @@
     position: absolute;
     top: 100%;
     right: 0;
-    display: none;
     border-radius: 6px;
     width: 115px;
-    margin-top: 14px;
+    margin-top: 40px;
+    opacity: 0;
+	visibility: hidden;
+	-webkit-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	transition: all 0.5s;
+	z-index: 9;
 }
 .setting-option ul li {
 	padding: 8px 10px;
@@ -546,6 +563,31 @@
 	}
 	.setting-option ul li {
 		padding: 8px 8px;
+	}
+	.innerpage-summary-offer-title {
+		margin-left: -20px;
+		margin-right: -20px;
+	}
+}
+@media(max-width: 639px){
+	.innerpage-summary{
+		flex-wrap: wrap;
+	}
+	.innerpage-summary-con,
+	.innerpage-summary-rgt{
+		width: 100%;
+	}
+	.fs-clickable-btns{
+		width: min-content;
+	}
+	.innerpage-summary-con{
+		padding-right: 0;
+		padding-bottom: 30px;
+	}
+	.share-socials,
+	.setting-option{
+		left: 0;
+		z-index: 9;
 	}
 }
 @media(max-width: 575px){

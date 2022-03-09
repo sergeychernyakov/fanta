@@ -1,3 +1,13 @@
+.homeSlider .home-slider-item{
+	display: none;
+}
+.homeSlider .home-slider-item:first-child{
+	display: block;
+}
+.homeSlider.slick-initialized .home-slider-item{
+	display: block;
+}
+
 .fs-service-sec{
 	padding-bottom: 100px;
 	position: relative;
@@ -32,14 +42,12 @@
 	color: #fff;
 	font-family: Poppins;
 	font-weight: 600;
-	line-height: 1.5;
 	text-align: center;
 	margin-bottom: 12px;
 }
 .fs-service-grd-des p{
 	text-align: center;
 	font-style: normal;
-	font-family:Poppins;
 	line-height: 1.5;
 	font-weight: normal;
 	color: #fff;
@@ -207,6 +215,9 @@
 	}
 }
 @media(max-width: 991px){
+	.fs-category-sec{
+		padding-bottom: 30px;
+	}
 	.fs-cat-grds ul li{
 		width: 50%;
 	}
@@ -231,11 +242,8 @@
 	}
 }
 @media(max-width: 767px){
-	.fs-category-sec{
-		padding-bottom: 10px;
-	}
 	.fs-category-sec .sec-entry-hdr{
-		padding-bottom: 7px;
+		padding-bottom: 15px!important;
 	}
 	.fs-category-sec-cntlr{
 		padding-top: 55px;
@@ -267,5 +275,256 @@
 @media(max-width: 575px){
 	.fs-cat-grds {
     	max-width: 356px;
+	}
+}
+
+
+/*start Home create and sel sec*/
+.fs-create-sell-sec{
+	padding-bottom: 38px;
+}
+.sec-entry-hdr-title{
+	color: #000000;
+}
+.fs-create-sell-sec .sec-entry-hdr{
+	padding-bottom: 80px;
+}
+.fs-create-sell-sec .fs-service-grd-item{
+	border: 1px solid #ACACAC;
+	border-radius: 20px;
+}
+.fs-create-sell-sec .fs-service-grd-icon{
+	padding-top: 20px;
+	padding-bottom: 12px;
+}
+.fs-create-sell-sec .fs-service-grd-title {
+    padding-bottom: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fs-create-sell-sec .fs-service-grd-title h4{
+	padding: 0 10px;
+	color: #000000;
+	margin-bottom: 8px;
+	font-size: 21px;
+}
+.fs-create-sell-sec .fs-service-grd-des p{
+	font-weight: 400;
+	color: #000000;
+	padding: 0 10px;
+	line-height: 1.2;
+}
+.fs-create-sell-sec .fs-service-sec-cntlr ul li{
+	padding: 0 10px 15px;
+}
+.fs-create-sell-sec .fs-service-sec-cntlr{
+	padding-top: 43px;
+}
+
+
+/*end Home create and sel sec*/
+/*responsive*/
+@media(max-width: 1199px){
+	.fs-create-sell-sec .fs-service-grd{
+		max-width: 650px;
+		margin: auto;
+	}
+	.fs-create-sell-sec .fs-service-sec-cntlr ul li{
+		padding: 0 15px 30px;
+	}
+	.fs-create-sell-sec .sec-entry-hdr{
+		padding-bottom: 65px;
+	}
+	.fs-create-sell-sec .fs-service-grd-des p{
+		padding: 0 12px 6px;
+	}
+	.fs-create-sell-sec .fs-service-sec-cntlr{
+		padding-top: 35px;
+	}
+	.fs-create-sell-sec{
+		padding-bottom: 33px;
+	}
+}
+@media(max-width: 991px){
+	.fs-create-sell-sec .fs-service-grd{
+		max-width: 600px;
+	}
+	.fs-create-sell-sec .sec-entry-hdr{
+		padding-bottom: 50px;
+	}
+	.fs-create-sell-sec{
+		padding-bottom: 25px;
+	}
+	.fs-create-sell-sec .fs-service-sec-cntlr{
+		padding-top: 25px;
+	}
+	.fs-create-sell-sec .fs-service-sec-cntlr ul li {
+		padding: 0 12px 24px;
+	}
+	.fs-create-sell-sec .fs-service-grd-title h4{
+		font-size: 18px;
+	}
+}
+@media(max-width: 767px){
+	.fs-create-sell-sec .fs-service-sec-cntlr ul li{
+		width: 50%;
+	}
+	.fs-create-sell-sec .fs-service-grd-des p{
+		padding: 0 8px 0;
+	}
+	.fs-create-sell-sec .fs-service-grd-icon{
+		padding-top: 15px;
+		padding-bottom: 8px;
+	}
+	.fs-create-sell-sec .fs-service-grd{
+		max-width: 530px;
+	}
+	.fs-create-sell-sec .fs-service-sec-cntlr{
+		padding-top: 20px;
+	}
+	.fs-create-sell-sec .sec-entry-hdr{
+		padding-bottom: 18px;
+	}
+	.fs-create-sell-sec{
+		padding-bottom: 10px;
+	}
+}
+@media(max-width: 639px){
+	.fs-create-sell-sec .fs-service-sec-cntlr ul li{
+		width: 100%;
+	}
+	.fs-create-sell-sec .fs-service-grd{
+		max-width: 300px;
+	}
+	.fs-create-sell-sec .fs-service-grd-icon{
+		padding-top: 20px;
+		padding-bottom: 10px;
+	}
+	.fs-create-sell-sec .fs-service-grd-des p{
+		padding: 0 8px 6px;
+	}
+	.fs-create-sell-sec .sec-entry-hdr{
+		padding-bottom: 35px;
+	}
+	.fs-create-sell-sec .fs-service-sec-cntlr ul li{
+		padding: 0 12px 25px;
+	}
+	.fs-create-sell-sec .fs-service-grd-title h4{
+		margin-bottom: 12px;
+	}
+}
+@media(max-width: 575px){
+	.fs-create-sell-sec .sec-entry-hdr{
+		padding-bottom: 25px;
+	}
+	.fs-create-sell-sec{
+		padding-bottom: 15px;
+	}
+	.fs-create-sell-sec{
+		padding-bottom: 0;
+	}
+}
+@media(max-width: 479px){
+	.fs-create-sell-sec .sec-entry-hdr{
+		padding-bottom: 20px!important;
+	}
+	.fs-create-sell-sec{
+		padding-top: 5px;
+	}
+}
+@media(max-width: 375px){
+	.fs-create-sell-sec .fs-service-sec-cntlr ul li{
+    	padding: 0 12px 20px;
+	}
+	.fs-create-sell-sec .fs-service-grd-title h4{
+		margin-bottom: 10px;
+	}
+}
+
+/*End Responsive*/
+.popular-cetagory-sec .fs-category-sec-cntlr{
+	padding-top: 60px;
+}
+.fs-black-bg-btn .fs-btn{
+	flex-basis: 272px;
+	transition: .5s;
+}
+.fs-black-bg-btn .fs-btn:hover{
+	background: #A2222F;
+	color: #fff;
+	border: 1px solid #A2222F;
+}
+.fs-black-bg-btn .fs-btn-cntlr{
+	justify-content: center;
+}
+.fs-black-bg-btn{
+	padding-top: 90px;
+	padding-bottom: 125px;
+}
+.popular-cetagory-sec .sec-entry-hdr{
+	padding-bottom: 60px;
+}
+
+
+@media(max-width: 1199px){
+	.fs-black-bg-btn{
+		padding-top: 75px;
+		padding-bottom: 110px;
+	}
+	.popular-cetagory-sec .fs-category-sec-cntlr{
+		padding-top: 35px;
+	}
+}
+@media(max-width: 991px){
+	.popular-cetagory-sec .fs-category-sec-cntlr{
+		padding-top: 20px;
+	}
+	.fs-black-bg-btn{
+		padding-top: 45px;
+		padding-bottom: 50px;
+	}
+}
+@media(max-width: 767px){
+	.fs-black-bg-btn{
+		padding-top: 38px;
+		padding-bottom: 58px;
+	}
+	.popular-cetagory-sec .fs-category-sec-cntlr{
+		padding-top: 15px;
+	}
+}
+@media(max-width: 639px){
+	.fs-black-bg-btn{
+		padding-top: 33px;
+		padding-bottom: 52px;
+	}
+}
+@media(max-width: 575px){
+	.popular-cetagory-sec .fs-category-sec-cntlr{
+		padding-top: 12px;
+	}
+	.fs-black-bg-btn{
+		padding-top: 30px;
+		padding-bottom: 50px;
+	}
+}
+@media(max-width: 479px){
+	.popular-cetagory-sec .fs-category-sec-cntlr{
+		padding-top: 8px;
+	}
+	.fs-black-bg-btn .fs-btn{
+		flex-basis: 100%;
+	}
+	.fs-create-sell-sec .fs-service-sec-cntlr{
+		padding-top: 10px;
+	}
+}
+@media(max-width: 375px){
+	.fs-black-bg-btn{
+		padding-top: 12px;
+	}
+	.fs-category-sec .sec-entry-hdr{
+		padding-bottom: 10px!important;
 	}
 }

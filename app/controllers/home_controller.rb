@@ -2,12 +2,9 @@ class HomeController < ApplicationController
   def index
   end
 
-  def item_page
+  def sitemap
   end
 
-  def profile_page
-  end
-
-  def map_page
+  def home
   end
 end

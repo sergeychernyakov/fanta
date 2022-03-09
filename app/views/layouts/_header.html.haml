@@ -1,0 +1,57 @@
+%body
+  %header.logged-header
+    .container
+      .row
+        .col-md-12
+          .logged-header-inr.clearfix
+            .lgd-hdr-lft
+              .lgd-hdr-logo
+                %a{:href => "#"}
+                  %img{:src => "/assets/logged-logo.svg"}/
+            .lgd-hdr-rgt-cntlr
+              .lgd-hdr-srch-cntlr.hide-md
+                .lgd-hdr-srch
+                  %form{:action => "#"}
+                    %input{:name => "email", :placeholder => "Search item, collections adn accounts", :type => "email"}/
+                    %button{:type => "submit"}
+                      %i
+                        %img{:alt => "", :src => "/assets/search-hdr-rch-icon.svg"}/
+                  .lgd-hdr-srch-result
+                    %label{:for => ""} NFTS
+                    %ul.reset-list
+                      %li
+                        %a{:href => "#"} Asian
+                      %li Asian #12
+                      %li Asian #15
+                    %label{:for => ""} Categories
+                    %ul.reset-list
+                      %li Asian
+                      %li Asian
+                    %label{:for => ""} Creators
+                    %ul.reset-list
+                      %li Asianpro
+                    %span Press Enter to search all items
+              .lgd-hdr-menu.hide-md
+                %nav.main-nav
+                  %ul.clearfix.reset-list
+                    %li.current-menu-item
+                      %a{:href => "#"} Exlplore
+                    %li.menu-item-has-children
+                      %a{:href => "#"} More
+                      %ul.sub-menu
+                        %li
+                          %a{:href => "#"} FAQ
+                        %li
+                          %a{:href => "#"} Contact
+                        %li
+                          %a{:href => "#"} Privacy &amp; TOS
+                    %li
+                      %a{:href => "#"} Create
+              .lgd-hdr-pro
+                %a{:href => "#"}
+                  %img{:alt => "", :src => "/assets/logged-profile.png"}/
+              .hamburger-cntlr.show-md
+                .hamburger-icon
+                  %span
+                  %span
+                  %span

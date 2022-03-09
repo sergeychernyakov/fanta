@@ -23,13 +23,16 @@ body {
     font-weight: 400;
     font-family: 'Poppins', sans-serif;
 }
-.logged-page body{
+body .logged-page {
     background: #fff;
     color: #000000;
     font-size: 18px;
     line-height: 21px;
     font-weight: 400;
     font-family: 'Roboto', sans-serif;
+}
+body .logged-page.home-popup{
+    position: relative;
 }
 /*
 font-family: 'Roboto', sans-serif;
@@ -294,7 +297,7 @@ body .select2-container.select2-container--default.select2-container--open .sele
 }
 .select2-selection__arrow:after {
     content: "";
-    background: url(../images/select-arrow.svg);
+    background: url(/assets/select-arrow.svg);
     background-repeat: no-repeat!important;
     background-size: 100% auto;
     width: 10px;
@@ -396,6 +399,32 @@ span.select2.select2-container.select2-container--default {
 /*common buttons*/
 .fs-btn-cntlr{
     display: flex;
+}
+.logged-page .fs-btn{
+    flex-basis: 186px;
+    background: #000;
+    color: #fff;
+    font-weight: 400;
+    padding: 17px 15px 17px;
+    border-radius: 10px;
+    border: 1px solid #000000;
+    font-size: 22px;
+}
+.logged-page .fs-btn:hover{
+    background: transparent;
+    color: #000;
+}
+.logged-page .fs-trns-btn{
+    border: 1px solid #000000;
+    padding: 17px 15px 17px;
+    color: #000;
+    font-size: 22px;
+    font-weight: 400;
+    flex-basis: 186px;
+}
+.logged-page .fs-trns-btn:hover{
+    background: #000;
+    color: #fff;
 }
 .fs-btn{
     display: inline-block;

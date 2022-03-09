@@ -1,0 +1,49 @@
+ <div class="create-new-item-cont-cntlr">
+    <div class="custom-nft-qoute-form-sec">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="form-cntnt-cntlr-module">
+              <div class="form-entry-hdr">
+                 <%= form_for @collection do |f| %>
+                 <h1 class="fl-h1 form-entry-hdr-title">Create Your Collection</h1>
+              </div>
+
+              <div class="form-wrp-module clearfix">
+                <form class="needs-validation" novalidate>
+
+                  <div class="input-fields-row input-field-name-row">
+                    <div class="input-field">
+                      <label for="">Name<span class="input-required-label">*</span></label>
+                      <%= f.text_field :name, placeholder: "Collection name", required: true %>
+                    </div>
+                  </div> 
+
+                  <div class="input-fields-row">
+                    <div class="input-field input-field-textarea">
+                      <label for="">Description<!-- <span class="input-required-label">*</span> --></label>
+                      <%= f.text_field :description, placeholder: "Enter detailed description of your collection"%>
+                      <label id="required_1-error" class="required-error" for="required_1">This field is required.</label>
+                    </div>
+                  </div>
+
+                  <div class="input-fields-row">
+                    <div class="input-field input-field-textarea">
+                      <label for="">Price<!-- <span class="input-required-label">*</span> --></label>
+                      <%= f.text_field :price, placeholder: "Enter detailed description of your collection"%>
+                      <label id="required_1-error" class="required-error" for="required_1">This field is required.</label>
+                    </div>
+                  </div>
+
+                  <div class="input-field-btn">
+                    <%= f.submit%>
+                  </div>
+                </form> 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+<% end %>
